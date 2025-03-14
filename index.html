@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-text {
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-5 bg-gray-100 shadow-md">
+        <div class="text-3xl font-bold text-gray-800">Luxury Scents</div>
+        <!-- <div>
+            <button class="px-4 py-2 bg-transparent border border-gray-800 text-gray-800 rounded-lg hover:bg-gray-800 hover:text-white transition">Login</button>
+            <button class="ml-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition">Sign Up</button>
+        </div> -->
+        <div>
+            <a href="login.html" class="px-4 py-2 bg-transparent border border-gray-800 text-gray-800 rounded-lg hover:bg-gray-800 hover:text-white transition">Login</a>
+            <a href="signup.html" class="ml-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition">Sign Up</a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center justify-center h-screen text-center bg-cover bg-center" style="background-image: url('https://png.pngtree.com/background/20250103/original/pngtree-summer-beach-sea-blue-aesthetic-literature-picture-image_15161773.jpg');">
+        <h1 class="text-6xl font-bold text-white animate-text">Experience the Essence of Luxury</h1>
+        <p class="text-xl text-black-200 mt-4 animate-text" style="animation-delay: 0.5s;">Discover exclusive fragrances crafted for elegance.</p>
+        <a  href="signup.html" class="mt-6 px-6 py-3 bg-white text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition animate-text" style="animation-delay: 1s;">GET STARTED !</a>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 ">
+        <p>&copy; 2025 Luxury Scents. All rights reserved.</p>
+    </footer>
+</body>
+</html>

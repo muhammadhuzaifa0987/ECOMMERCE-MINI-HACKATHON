@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Panel - Product Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/admin.js"></script>
+</head>
+<body class="bg-gray-100 p-6">
+     <!-- 🚀 Admin Navbar -->
+     <nav class="bg-blue-600 p-4 text-white flex justify-between items-center">
+        <h1 class="text-xl font-bold">Admin Dashboard</h1>
+        <div>
+        
+            <a href="products.html" class="px-4">📦 Products</a>
+            <button id="logout-btn" class="bg-black-500 px-4 py-1 rounded">🚪 Logout</button>
+        </div>
+    </nav>
+    <!-- <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Admin Dashboard</h2>
+        
+        🚀 Add Product Form -->
+        <!-- <form id="add-product-form" class="bg-white p-4 shadow-md rounded mb-4">
+            <h3 class="text-lg font-semibold mb-2">Add New Product</h3>
+            <input type="text" id="product-name" placeholder="Product Name" required class="w-full p-2 border rounded mb-2">
+            <input type="number" id="product-price" placeholder="Price ($)" required class="w-full p-2 border rounded mb-2">
+            <input type="text" id="product-image" placeholder="Image URL" required class="w-full p-2 border rounded mb-2">
+            <input type="text" id="product-category" placeholder="Category" required class="w-full p-2 border rounded mb-2">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add Product</button>
+        </form> -->
+        <!-- 🚀 Admin Panel -->
+    <div class="container mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">Manage Products</h2>
+
+        <!-- Add Product Form -->
+        <form id="add-product-form" class="bg-white p-4 rounded shadow-md mb-6">
+            <input type="text" id="product-name" placeholder="Product Name" class="border p-2 w-full mb-2">
+            <input type="number" id="product-price" placeholder="Price" class="border p-2 w-full mb-2">
+            <input type="text" id="product-image" placeholder="Image URL" class="border p-2 w-full mb-2">
+            <input type="text" id="product-category" placeholder="Category" class="border p-2 w-full mb-2">
+            <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded w-full">➕ Add Product</button>
+        </form>
+
+        <!-- 🚀 Product List -->
+        <div class="bg-white p-4 shadow-md rounded">
+            <h3 class="text-lg font-semibold mb-2">Manage Products</h3>
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr>
+                        <th class="border p-2">Name</th>
+                        <th class="border p-2">Price</th>
+                        <th class="border p-2">Category</th>
+                        <th class="border p-2">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
